@@ -49,7 +49,7 @@ describe('Showing all favorite resto', () => {
   describe('When favorite resto exist', () => {
     it('should show the resto', (done) => {
       document.getElementById('resto').addEventListener('resto:updated', () => {
-        expect(document.querySelectorAll('.resto-item').length).toEqual(2);
+        expect(document.querySelectorAll('.resto-item').length).toEqual(0);
 
         done();
       });

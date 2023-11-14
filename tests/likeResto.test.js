@@ -3,13 +3,6 @@ import { spyOn } from 'jest-mock';
 import FavoriteRestoIdb from '../src/scripts/data/favorite-resto-idb';
 import * as TestFactories from './helpers/testFactories';
 
-// // Add this at the beginning of your test file
-// jest.mock('../src/scripts/utils/notif-websocket.js', () => ({
-//   _checkPermission: jest.fn().mockReturnValue(true),
-//   _requestPermission: jest.fn().mockResolvedValue(true),
-//   _sendNotification: jest.fn(),
-// }));
-
 describe('Liking A Resto', () => {
   const addLikeButtonContainer = () => {
     document.body.innerHTML = '<div id="likeButtonContainer"></div>';

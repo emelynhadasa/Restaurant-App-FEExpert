@@ -1,11 +1,12 @@
 import { createLikeButtonTemplate, createLikedButtonTemplate } from '../views/template/resto-template';
 import { sendNotiftoWebsocket } from './websocket-initiator';
+import FavoriteRestoIdb from '../data/favorite-resto-idb';
 
 const LikeButtonInitiator = {
-  async init({ likeButtonContainer, FavoriteResto, resto }) {
+  async init({ likeButtonContainer, resto }) {
     this._likeButtonContainer = likeButtonContainer;
     this._resto = resto;
-    this._favoriteResto = FavoriteResto;
+    this._favoriteResto = FavoriteRestoIdb;
 
     await this._renderButton();
   },

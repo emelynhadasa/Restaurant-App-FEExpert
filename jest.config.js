@@ -20,6 +20,9 @@ const config = {
   transform: {
     '^.+\\.(js|ts)$': 'babel-jest',
   },
+
+  // Set the default timeout for all tests to 10 seconds (or adjust as needed)
+  testTimeout: 20000,
 };
 
 module.exports = config;

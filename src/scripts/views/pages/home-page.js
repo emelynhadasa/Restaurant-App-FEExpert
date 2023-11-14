@@ -14,7 +14,7 @@ const HomePage = {
         </div>
         <div class="hero-text">
           <h2>Find Your <span class="second-color">Resto</span></h2>
-          <a href="#resto" class="find-resto">Explore</a>
+          <a href="#resto" class="find-resto">Start</a>
         </div>
       </section>
       <section id="resto" tabindex="0">
